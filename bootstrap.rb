@@ -111,13 +111,13 @@ module Service
                              "localDocumentRoot=''",
                              "disableConfiguration=true",
                              "dnsUseGethostbyname='yes'",
-                             "logSyslog=false",
+                             "logSyslog=true",
+                             "logFile=/var/log/polipo.log"
                              "daemonise=true",
                              "pidFile=#{pid_file}",
                              "disableVia=true",
                              "allowedPorts='1-65535'",
-                             "tunnelAllowedPorts='1-65535'",
-                             "| logger -t 'polipo' 2>&1")
+                             "tunnelAllowedPorts='1-65535'")
     end
 
     def tor_port

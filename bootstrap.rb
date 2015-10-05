@@ -112,7 +112,7 @@ module Service
                              "disableConfiguration=true",
                              "dnsUseGethostbyname='yes'",
                              "logSyslog=true",
-                             "logFile=/var/log/polipo.log"
+                             "logFile=/var/log/polipo.log",
                              "daemonise=true",
                              "pidFile=#{pid_file}",
                              "disableVia=true",
